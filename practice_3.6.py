@@ -17,9 +17,10 @@ def int_func(str_el):
 def str_func(string):
     string = string.split()
     for el in string:
-        string[string.index(el)] = int_func(el)
+        if el >= 'a' and el <= 'z':
+            string[string.index(el)] = int_func(el)
         print(string)
     return ' '.join(string)
 
 
-print(str_func('text text text text text'))
+print(str_func('text text 2 3 # text'))
