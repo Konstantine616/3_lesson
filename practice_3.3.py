@@ -2,8 +2,8 @@
 # и возвращает сумму наибольших двух аргументов.
 
 
-def my_func(a, b, c):
-    x = sorted([a, b, c])
+def my_func(*args):
+    x = sorted(args)
     return x[1] + x[2]
 
 
